@@ -34,8 +34,8 @@ const Reviews = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { 
     once: true, 
-    margin: "-100px",
-    amount: 0.3 
+    margin: "0px",
+    amount: 0.3
   });
 
   const containerVariants = {

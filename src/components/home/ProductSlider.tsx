@@ -43,8 +43,8 @@ const ProductSlider = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { 
     once: true, 
-    margin: "-100px",
-    amount: 0.2 
+    margin: "0px",
+    amount: 0.
   });
 
   const nextSlide = () => {
@@ -88,14 +88,9 @@ const ProductSlider = () => {
   };
 
   return (
-    <section ref={ref} className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
-          className="text-center mb-12"
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
+        <div className="text-center mb-12">
           <h2 className="text-4xl sm:text-5xl font-bold font-playfair text-black mb-4">
             Featured
             <br />
@@ -104,20 +99,15 @@ const ProductSlider = () => {
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Discover our latest collection of premium menswear designed for the discerning gentleman.
           </p>
-        </motion.div>
+        </div>
 
         <div className="relative">
-          <motion.div 
-            className="flex items-center justify-between mb-8"
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-          >
+          <div className="flex items-center justify-between mb-8">
             <Button
               variant="outline"
               size="sm"
               onClick={prevSlide}
-              className="rounded-full p-2 text-black border-black hover:bg-black hover:text-white transition-all duration-300"
+              className="rounded-full p-2 text-black border-black hover:bg-black hover:text-white"
             >
               <ChevronLeft size={20} />
             </Button>
@@ -125,39 +115,26 @@ const ProductSlider = () => {
               variant="outline"
               size="sm"
               onClick={nextSlide}
-              className="rounded-full p-2 text-black border-black hover:bg-black hover:text-white transition-all duration-300"
+              className="rounded-full p-2 text-black border-black hover:bg-black hover:text-white"
             >
               <ChevronRight size={20} />
             </Button>
-          </motion.div>
+          </div>
 
-          <motion.div 
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
-            variants={containerVariants}
-            initial="hidden"
-            animate={isInView ? "visible" : "hidden"}
-          >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((product, index) => (
-              <motion.div
+              <div
                 key={product.id}
                 className={`transform transition-all duration-500 ${
                   index === currentIndex ? "scale-105" : "scale-100"
                 }`}
-                variants={itemVariants}
-                whileHover={{ 
-                  scale: 1.05,
-                  transition: { duration: 0.2 }
-                }}
               >
-                <Link 
-                  to={`/product/${product.id}`}
-                  className="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300 block"
-                >
+                <div className="bg-white rounded-lg shadow-lg overflow-hidden group hover:shadow-xl transition-shadow duration-300">
                   <div className="aspect-[3/4] overflow-hidden">
                     <img
                       src={product.image}
                       alt={product.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
                   <div className="p-6">
@@ -165,10 +142,10 @@ const ProductSlider = () => {
                     <h3 className="text-xl font-semibold text-black mb-2">{product.name}</h3>
                     <p className="text-lg font-bold text-black">{product.price}</p>
                   </div>
-                </Link>
-              </motion.div>
+                </div>
+              </div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

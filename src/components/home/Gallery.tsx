@@ -40,7 +40,7 @@ const Gallery = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { 
     once: true, 
-    margin: "-100px",
+    margin: "300px",
     amount: 0.2 
   });
 
