@@ -6,32 +6,32 @@ import { useRef } from "react";
 const galleryImages = [
   {
     id: 1,
-    src: "uploads/20250403_164252_IMG_2265.jpg",
+    src: `${import.meta.env.BASE_URL}uploads/20250403_164252_IMG_2265.jpg`,
     alt: "Portrait in black and white"
   },
   {
     id: 2,
-    src: "uploads/20250403_164216_IMG_2262.jpg",
+    src: `${import.meta.env.BASE_URL}uploads/20250403_164216_IMG_2262.jpg`,
     alt: "Elegant turtleneck portrait"
   },
   {
     id: 3,
-    src: "uploads/20250403_164355_IMG_2270.jpg",
+    src: `${import.meta.env.BASE_URL}uploads/20250403_164355_IMG_2270.jpg`,
     alt: "Profile portrait"
   },
   {
     id: 4,
-    src: "uploads/20250403_164111_IMG_2247.jpg",
+    src: `${import.meta.env.BASE_URL}uploads/20250403_164111_IMG_2247.jpg`,
     alt: "Dramatic lighting portrait"
   },
   {
     id: 5,
-    src: "uploads/20250403_164045_IMG_2253.jpg",
+    src: `${import.meta.env.BASE_URL}uploads/20250403_164045_IMG_2253.jpg`,
     alt: "Classic shirt portrait"
   },
   {
     id: 6,
-    src: "uploads/20250403_143007_IMG_2248.jpg",
+    src: `${import.meta.env.BASE_URL}uploads/20250403_143007_IMG_2248.jpg`,
     alt: "Artistic portrait"
   }
 ];

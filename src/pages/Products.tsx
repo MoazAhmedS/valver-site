@@ -18,42 +18,42 @@ const defaultProducts = [
     id: 1,
     name: "Classic Blazer",
     price: 299,
-    image: "uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png",
+    image: `${import.meta.env.BASE_URL}uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png`,
     category: "Outerwear"
   },
   {
     id: 2,
     name: "Premium Shirt",
     price: 129,
-    image: "uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png",
+    image: `${import.meta.env.BASE_URL}uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png`,
     category: "Shirts"
   },
   {
     id: 3,
     name: "Tailored Trousers",
     price: 189,
-    image: "uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png",
+    image: `${import.meta.env.BASE_URL}uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png`,
     category: "Bottoms"
   },
   {
     id: 4,
     name: "Designer Suit",
     price: 599,
-    image: "uploads/155e1b16-a705-459e-94e9-c7747213138d.png",
+    image: `${import.meta.env.BASE_URL}uploads/155e1b16-a705-459e-94e9-c7747213138d.png`,
     category: "Suits"
   },
   {
     id: 5,
     name: "Casual Jacket",
     price: 249,
-    image: "uploads/2c97c5bf-a49d-45cb-896e-e53ee41bcd61.png",
+    image: `${import.meta.env.BASE_URL}uploads/2c97c5bf-a49d-45cb-896e-e53ee41bcd61.png`,
     category: "Outerwear"
   },
   {
     id: 6,
     name: "Dress Shirt",
     price: 159,
-    image: "uploads/55070205-e7ce-4130-a3b3-97cba7bf70e2.png",
+    image: `${import.meta.env.BASE_URL}uploads/55070205-e7ce-4130-a3b3-97cba7bf70e2.png`,
     category: "Shirts"
   },
 ];

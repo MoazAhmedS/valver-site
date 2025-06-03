@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
       <div className="absolute inset-0">
         <motion.img 
-          src="uploads/7a496881-829d-446b-91e5-9f4b65153623.png" 
+          src={`${import.meta.env.BASE_URL}uploads/7a496881-829d-446b-91e5-9f4b65153623.png`}  
           alt="Dark fashion portrait"
           className="w-full h-full object-cover opacity-70"
           initial={{ scale: 1.1, opacity: 0 }}

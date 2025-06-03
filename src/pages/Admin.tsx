@@ -55,7 +55,7 @@ const Admin = () => {
         colors: ["Navy", "Charcoal", "Black"],
         sizes: ["S", "M", "L", "XL", "XXL"],
         stock: 15,
-        image: "uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png"
+        image: `${import.meta.env.BASE_URL}uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png`
       },
       { 
         id: 2, 
@@ -66,7 +66,7 @@ const Admin = () => {
         colors: ["White", "Light Blue", "Navy"],
         sizes: ["S", "M", "L", "XL"],
         stock: 23,
-        image: "uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png"
+        image: `${import.meta.env.BASE_URL}uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png`
       },
       { 
         id: 3, 
@@ -77,7 +77,7 @@ const Admin = () => {
         colors: ["Black", "Charcoal", "Navy"],
         sizes: ["30", "32", "34", "36", "38"],
         stock: 18,
-        image: "uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png"
+        image: `${import.meta.env.BASE_URL}uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png`
       },
       { 
         id: 4, 
@@ -88,7 +88,7 @@ const Admin = () => {
         colors: ["Navy", "Charcoal", "Black"],
         sizes: ["S", "M", "L", "XL", "XXL"],
         stock: 8,
-        image: "uploads/155e1b16-a705-459e-94e9-c7747213138d.png"
+        image: `${import.meta.env.BASE_URL}uploads/155e1b16-a705-459e-94e9-c7747213138d.png`
       },
       { 
         id: 5, 
@@ -99,7 +99,7 @@ const Admin = () => {
         colors: ["Navy", "Gray", "Black"],
         sizes: ["S", "M", "L", "XL"],
         stock: 12,
-        image: "uploads/2c97c5bf-a49d-45cb-896e-e53ee41bcd61.png"
+        image: `${import.meta.env.BASE_URL}uploads/2c97c5bf-a49d-45cb-896e-e53ee41bcd61.png`
       },
       { 
         id: 6, 
@@ -110,7 +110,7 @@ const Admin = () => {
         colors: ["White", "Light Blue", "Pink"],
         sizes: ["S", "M", "L", "XL", "XXL"],
         stock: 20,
-        image: "uploads/55070205-e7ce-4130-a3b3-97cba7bf70e2.png"
+        image: `${import.meta.env.BASE_URL}uploads/55070205-e7ce-4130-a3b3-97cba7bf70e2.png`
       },
     ];
   };
@@ -125,11 +125,11 @@ const Admin = () => {
       }
     }
     return [
-      { id: 1, name: "Hero Image", url: "uploads/7a496881-829d-446b-91e5-9f4b65153623.png", type: "hero" },
-      { id: 2, name: "Studio Image", url: "uploads/20250403_164355_IMG_2270.jpg", type: "studio" },
-      { id: 3, name: "Gallery 1", url: "uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png", type: "gallery" },
-      { id: 4, name: "Gallery 2", url: "uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png", type: "gallery" },
-      { id: 5, name: "Gallery 3", url: "uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png", type: "gallery" },
+      { id: 1, name: "Hero Image", url: `${import.meta.env.BASE_URL}uploads/7a496881-829d-446b-91e5-9f4b65153623.png`, type: "hero" },
+      { id: 2, name: "Studio Image", url: `${import.meta.env.BASE_URL}uploads/20250403_164355_IMG_2270.jpg`, type: "studio" },
+      { id: 3, name: "Gallery 1", url: `${import.meta.env.BASE_URL}uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png`, type: "gallery" },
+      { id: 4, name: "Gallery 2", url: `${import.meta.env.BASE_URL}uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png`, type: "gallery" },
+      { id: 5, name: "Gallery 3", url: `${import.meta.env.BASE_URL}uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png`, type: "gallery" },
     ];
   };
 

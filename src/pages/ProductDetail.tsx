@@ -28,9 +28,9 @@ const defaultProductData: Record<string, ProductData> = {
     price: 299,
     description: "A timeless classic blazer crafted from premium wool blend. Perfect for both formal occasions and smart-casual styling. Features a tailored fit with natural shoulder construction and functional buttonholes.",
     images: [
-      "/uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png",
-      "/uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png",
-      "/uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png"
+      `${import.meta.env.BASE_URL}uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png`,
+      `${import.meta.env.BASE_URL}uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png`,
+      `${import.meta.env.BASE_URL}uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png`
     ],
     colors: ["Navy", "Charcoal", "Black"],
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -43,8 +43,8 @@ const defaultProductData: Record<string, ProductData> = {
     price: 129,
     description: "Luxuriously soft cotton shirt with impeccable tailoring. Features mother-of-pearl buttons and French seams for durability and elegance.",
     images: [
-      "/uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png",
-      "/uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png"
+      `${import.meta.env.BASE_URL}uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png`,
+      `${import.meta.env.BASE_URL}uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png`
     ],
     colors: ["White", "Light Blue", "Navy"],
     sizes: ["S", "M", "L", "XL"],
@@ -79,7 +79,7 @@ const ProductDetail = () => {
             name: foundProduct.name,
             price: foundProduct.price,
             description: foundProduct.description || "Premium quality item crafted with attention to detail.",
-            images: foundProduct.image ? [foundProduct.image] : ["uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png"],
+            images: foundProduct.image ? [foundProduct.image] : [`${import.meta.env.BASE_URL}uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png`],
             colors: foundProduct.colors || ["Black", "Navy", "Gray"],
             sizes: foundProduct.sizes || ["S", "M", "L", "XL"],
             features: ["Premium quality", "Expert craftsmanship", "Modern design", "Comfortable fit"],

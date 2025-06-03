@@ -109,7 +109,7 @@ const Studio = () => {
           
           <motion.div variants={imageVariants}>
             <img 
-              src="uploads/20250403_164131_IMG_2257.JPG" 
+              src={`${import.meta.env.BASE_URL}uploads/20250403_164131_IMG_2257.JPG`} 
               alt="Studio workspace"
               className="w-full h-[600px] object-cover rounded-lg shadow-lg"
             />

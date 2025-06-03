@@ -12,28 +12,28 @@ const products = [
     id: 1,
     name: "Classic Blazer",
     price: "$299",
-    image: "uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png",
+    image: `${import.meta.env.BASE_URL}uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png`,
     category: "Outerwear"
   },
   {
     id: 2,
     name: "Premium Shirt",
     price: "$129",
-    image: "uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png",
+    image: `${import.meta.env.BASE_URL}uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png`,
     category: "Shirts"
   },
   {
     id: 3,
     name: "Tailored Trousers",
     price: "$189",
-    image: "uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png",
+    image: `${import.meta.env.BASE_URL}uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png`,
     category: "Bottoms"
   },
   {
     id: 4,
     name: "Designer Suit",
     price: "$599",
-    image: "uploads/155e1b16-a705-459e-94e9-c7747213138d.png",
+    image: `${import.meta.env.BASE_URL}uploads/155e1b16-a705-459e-94e9-c7747213138d.png`,
     category: "Suits"
   },
 ];
