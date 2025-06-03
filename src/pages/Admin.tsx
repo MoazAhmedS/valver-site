@@ -126,7 +126,7 @@ const Admin = () => {
     }
     return [
       { id: 1, name: "Hero Image", url: "uploads/7a496881-829d-446b-91e5-9f4b65153623.png", type: "hero" },
-      { id: 2, name: "Studio Image", url: "uploads/5a2ebe1f-e42a-42e9-8231-5507fa5d6ab0.png", type: "studio" },
+      { id: 2, name: "Studio Image", url: "uploads/20250403_164355_IMG_2270.jpg", type: "studio" },
       { id: 3, name: "Gallery 1", url: "uploads/fabb82a8-d5e3-4208-878b-90ee1150e514.png", type: "gallery" },
       { id: 4, name: "Gallery 2", url: "uploads/2c3ec1f0-b898-4836-98b4-50ae23f083e7.png", type: "gallery" },
       { id: 5, name: "Gallery 3", url: "uploads/0e6f0cb5-91c2-49d9-84d6-43e3742b70fe.png", type: "gallery" },
