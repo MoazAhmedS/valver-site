@@ -6,7 +6,7 @@ import { useRef } from "react";
 const galleryImages = [
   {
     id: 1,
-    src: "uploads/20250403_164252_IMG_2265.png",
+    src: "uploads/20250403_164252_IMG_2265.jpg",
     alt: "Portrait in black and white"
   },
   {
